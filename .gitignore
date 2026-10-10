@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+outputs/
+data/
+work/
+config.json
+*.sqlite3*
+.env*
+!*.example.json

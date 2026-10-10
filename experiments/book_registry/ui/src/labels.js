@@ -1,0 +1,10 @@
+export const kinds={person:'人物',item:'物品',faction:'势力',location:'地点',place:'地点',concept:'概念',scene:'场景',event:'事件',utterance:'言语',proposition:'命题',state:'状态',text_feature:'措辞',person_group:'人群',group:'群体',family_unit:'家庭',title:'称号',manifestation:'显现',author:'作者',phenomenon:'现象'};
+export const colors={person:'#098572',item:'#7650bd',faction:'#b05664',location:'#da8c21',place:'#da8c21',concept:'#4a77a7',scene:'#c99436',event:'#738694',utterance:'#8294a2',proposition:'#788aa6',state:'#8a859c',text_feature:'#879299',person_group:'#39937b',group:'#39937b',family_unit:'#4c9683'};
+export const states={accepted:'已接受',pending:'待核',rejected:'已否决',active:'有效候选',all:'全部状态'};
+export const pred=p=>p;
+export const valueText=value=>value==null?'—':typeof value==='object'?JSON.stringify(value):String(value);
+export const modality={actual:'实际',planned:'计划',reported:'转述',conditional:'条件',hypothetical:'假设',unknown:'未知'};
+export const attribution={narrator:'叙述者',character:'角色说法',inference:'推断',unknown:'来源未知'};
+export const shortName=s=>(s||'').replace(/[（(].*?[）)]/g,'').replace(/（.*$/,'');
+export const date=t=>t?new Date(t*1000).toLocaleString('zh-CN',{hour12:false}):'';
+export const unitName=s=>s?`源单元 ${Number(s.split('-')[1])}`:'';
